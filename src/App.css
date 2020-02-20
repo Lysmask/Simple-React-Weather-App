@@ -2,37 +2,39 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.weatherContainer {
+  /* display: flex; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.box {
+  margin: auto;
+  min-height: 250px;
+  max-height: 250px;
+  min-width: 300px;
+  max-width: 301px;
+  outline: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.city {
+  /* min-width: 100%; */
+}
+.list {
+  list-style: none;
+  align-content: flex-start;
+  padding-left: .4rem;
+  text-align: left;
+}
+.weatherFetch {
+  /* display:flex; */
+  /* align-self: flex-end; */
+  /* margin-bottom: auto; */
+  
+}
+.weatherFetchForm {
+  display:flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.textInput {
+
 }
