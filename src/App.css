@@ -1,40 +1,54 @@
 .App {
   text-align: center;
 }
-
-.weatherContainer {
-  /* display: flex; */
+.weatherClass {
+  display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
+
 .box {
-  margin: auto;
+  box-shadow: 10px 10px 5px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  /* margin: auto; */
   min-height: 250px;
-  max-height: 250px;
-  min-width: 300px;
   max-width: 301px;
   outline: 1px solid black;
 }
 
-.city {
-  /* min-width: 100%; */
-}
-.list {
-  list-style: none;
-  align-content: flex-start;
-  padding-left: .4rem;
-  text-align: left;
-}
 .weatherFetch {
-  /* display:flex; */
-  /* align-self: flex-end; */
-  /* margin-bottom: auto; */
-  
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
 }
 .weatherFetchForm {
-  display:flex;
-  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+.weatherFetchForm input {
+  max-width: 100%;
+  padding: .2rem;
+}
+.weatherFetchForm input[type=submit] {
+  padding: 0rem 1rem 0rem 1rem;
+  margin: 1rem 0rem 1rem 0rem;
+  border-radius: .5rem;
 }
 
-.textInput {
-
+table {
+  width: 100%;
+}
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+td:nth-child(odd) {
+  text-align: left;
+  padding: .3rem;
+}
+td:nth-child(even) {
+  text-align: right;
+  padding: .3rem;
 }
